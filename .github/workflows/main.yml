@@ -1,0 +1,15 @@
+name: Hello workflow
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: step 1 - say Hello
+        run: "Hello from github actions!"
+
+      - name: step 2 - print the data
+        run: date
+  
